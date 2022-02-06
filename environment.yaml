@@ -1,0 +1,19 @@
+name: nodejs-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pbr
+  - ipython
+
+  # Package management
+  - mamba>0.18
+  - nodejs>=16,<17
+
+  # Utilities
+  - black # formatter
+  - isort # import sorter
+  - flake8 # linter
+  - pre_commit # git pre-commit hooks
